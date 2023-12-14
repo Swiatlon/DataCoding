@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<div class="Container">
+    <div class="Sub-Container">
+        <h1>Data encryption</h1>
+        <h2>Caesar Coding</h2>
+
+        <div class="Flex">
+            <div class="Grid-Two-Items">
+                <h3>Input:</h3>
+                <textarea rows="4" id="caesar-coding-input"> </textarea>
+                <h3>Output:</h3>
+                <textarea rows="4" id="caesar-coding-output"> </textarea>
+            </div>
+            <Select class="caesar-step-number" id="coding-number">
+
+            </Select>
+        </div>
+        <h2>Caesar Decoding</h2>
+
+        <div class="Flex">
+            <div class="Grid-Two-Items">
+                <h3>Input:</h3>
+                <textarea rows="4" id="caesar-decoding-input"> </textarea>
+                <h3>Output:</h3>
+                <textarea rows="4" id="caesar-decoding-output"> </textarea>
+            </div>
+            <Select class="caesar-step-number" id="decoding-number">
+
+            </Select>
+        </div>
+    </div>
+    </hr>
+    <!-- Polybius -->
+    <div class="Polybius">
+        <h1>Polybius</h1>
+
+        <label for="inputText">Tekst do zakodowania/dekodowania:</label>
+        <textarea id="inputText" rows="4" cols="50"></textarea>
+
+        <button class="codingButton">Zakoduj</button>
+        <button class="decodingButton">Dekoduj</button>
+
+        <label for="inputKey">Klucz (maksymalnie 5 znaków):</label>
+        <input type="number" id="inputKey" maxlength="5">
+
+        <h2>Wynik:</h2>
+        <div id="outputText"></div>
+        </br>
+
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Kolumna 1</th>
+                    <th>Kolumna 2</th>
+                    <th>Kolumna 3</th>
+                    <th>Kolumna 4</th>
+                    <th>Kolumna 5</th>
+                    <th>Kolumna 6</th>
+                    <th>Kolumna 7</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Wiersz 1</th>
+                    <td class="draggable" draggable="true">a</td>
+                    <td class="draggable" draggable="true">ą</td>
+                    <td class="draggable" draggable="true">b</td>
+                    <td class="draggable" draggable="true">c</td>
+                    <td class="draggable" draggable="true">ć</td>
+                    <td class="draggable" draggable="true">d</td>
+                    <td class="draggable" draggable="true">e</td>
+                </tr>
+                <tr>
+                    <th>Wiersz 2</th>
+                    <td class="draggable" draggable="true">ę</td>
+                    <td class="draggable" draggable="true">f</td>
+                    <td class="draggable" draggable="true">g</td>
+                    <td class="draggable" draggable="true">h</td>
+                    <td class="draggable" draggable="true">i</td>
+                    <td class="draggable" draggable="true">j</td>
+                    <td class="draggable" draggable="true">k</td>
+                </tr>
+                <tr>
+                    <th>Wiersz 3</th>
+                    <td class="draggable" draggable="true">l</td>
+                    <td class="draggable" draggable="true">ł</td>
+                    <td class="draggable" draggable="true">m</td>
+                    <td class="draggable" draggable="true">n</td>
+                    <td class="draggable" draggable="true">ń</td>
+                    <td class="draggable" draggable="true">o</td>
+                    <td class="draggable" draggable="true">ó</td>
+                </tr>
+                <tr>
+                    <th>Wiersz 4</th>
+                    <td class="draggable" draggable="true">p</td>
+                    <td class="draggable" draggable="true">q</td>
+                    <td class="draggable" draggable="true">r</td>
+                    <td class="draggable" draggable="true">s</td>
+                    <td class="draggable" draggable="true">ś</td>
+                    <td class="draggable" draggable="true">t</td>
+                    <td class="draggable" draggable="true">u</td>
+                </tr>
+                <tr>
+                    <th>Wiersz 5</th>
+                    <td class="draggable" draggable="true">v</td>
+                    <td class="draggable" draggable="true">w</td>
+                    <td class="draggable" draggable="true">x</td>
+                    <td class="draggable" draggable="true">y</td>
+                    <td class="draggable" draggable="true">z</td>
+                    <td class="draggable" draggable="true">ź</td>
+                    <td class="draggable" draggable="true">ż</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "AR One Sans", sans-serif;
+  background-color: #0f0f0f;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Container {
+  background-color: #fff;
+  min-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 150px;
+}
+
+.Sub-Container {
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2,
+h3 {
+  margin-top: 20px;
+}
+
+.Flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Grid-Two-Items {
+  flex: 1;
+  margin-right: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.Select {
+  width: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  cursor: grab;
+}
+
+td.draggable {
+  cursor: grab;
+}
+
+td.dragged {
+  background-color: #ddd;
+}
+
+textarea {
+  width: 98%;
+}
+
+.Polybius {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
